@@ -3,7 +3,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 const Category = () => {
-  const categorys = ["a", "b", "c", "d", "e", "f", "g", "h", "i"];
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -36,7 +35,7 @@ const Category = () => {
   };
   return (
     <>
-      <div className="w-[87%] mx-auto relative">
+      <div className=" w-full mx-auto relative">
         <Carousel
           autoPlay={true}
           infinite={true}
@@ -44,15 +43,14 @@ const Category = () => {
           responsive={responsive}
           transitionDuration={500}
         >
-          {categorys.map((c, i) => (
+          {[1, 2, 3, 4, 5, 6].map((c, i) => (
             <div className="h-[185px] border block" key={i}>
               <div className="w-full h-full relative p-3">
-                <img src={c.image} alt="image" />
-                <div className="absolute bottom-6 w-full mx-auto font-bold left-0 flex justify-center items-center">
-                  <span className="py-[2px] px-6 bg-[#3330305d] text-white">
-                    {c}
-                  </span>
-                </div>
+                <img
+                  className=" w-full h-full cursor-pointer hover:scale-110 transition-all"
+                  src={`/animalM/${c}.png`}
+                  alt="image"
+                />
               </div>
             </div>
           ))}
