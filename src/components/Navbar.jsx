@@ -12,80 +12,60 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className=" bg-[#696b7e] w-full flex  items-center justify-between text-white px-5">
+      <div className=" bg-[#05b59c] w-full flex h-14 items-center justify-between text-white px-5">
         <Link to={"/"}>
           <div className="w-[40px] h-[40px] rounded-full">
-            <img src={logo} alt="" />
+            <img src={logo} alt="" className=" scale-150" />
           </div>
         </Link>
 
         <div className=" hidden sm:block">
           <ul className=" flex relative justify-between items-center">
-            <li className=" p-2 cursor-pointer">
-              <NavLink to={"/"}>Home BIG</NavLink>
+            <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg">
+              <NavLink to={"/"}>Home</NavLink>
             </li>
 
-            <li className=" p-2 cursor-pointer hover:bg-[#05b59c]">
+            <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg hover:bg-[#49a093ae] rounded-lg ">
               <NavLink to={"/about"}>About</NavLink>
             </li>
-            <li className=" p-2 cursor-pointer group">
+            <li className=" p-2 cursor-pointer group hover:bg-[#49a093ae] rounded-lg ">
               Products
-              <ul className=" bg-[#696b7e] w-28 absolute mt-2 hidden group-hover:block">
-                <li
-                  onMouseEnter={() => setHover(true)}
-                  onMouseLeave={() => setHover(false)}
-                  className=" p-2 cursor-pointer hover:bg-[#a5a7b9]">
-                  Product1
-                  {mHover && (
-                    <ul className=" bg-[#696b7e] w-28 absolute right-full top-0">
-                      <li className=" p-2 cursor-pointer hover:bg-[#a5a7b9] ">
-                        Product1.1
-                      </li>
-                      <li className=" p-2 cursor-pointer hover:bg-[#a5a7b9] ">
-                        Product1.2
-                      </li>
-                    </ul>
-                  )}
+              <ul className=" bg-[#05b59c] w-28 absolute left-28 mt-2 hidden group-hover:block z-50 rounded-md">
+                <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg ">
+                  All Product
                 </li>
-                <li className=" p-2 cursor-pointer hover:bg-[#a5a7b9] ">
-                  Product2
+                <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg ">
+                  Poultry
                 </li>
-                <li className=" p-2 cursor-pointer hover:bg-[#a5a7b9] ">
-                  Product3
+                <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg ">
+                  Agro
+                </li>
+                <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg ">
+                  Pets
+                </li>
+                <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg ">
+                  Fish
                 </li>
               </ul>
             </li>
-            <li className=" p-2 cursor-pointer hover:bg-[#05b59c]">
+            <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg">
               <NavLink to={"/about"}>Gallery</NavLink>
             </li>
-            <li className=" p-2 cursor-pointer hover:bg-[#05b59c]">
+            <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg">
               <NavLink to={"/about"}>Career</NavLink>
             </li>
 
-            <li className=" p-2 cursor-pointer group">
-              Products
-              <ul className=" bg-[#696b7e] w-28 absolute mt-2 hidden group-hover:block">
-                <li
-                  onMouseEnter={() => setHover(true)}
-                  onMouseLeave={() => setHover(false)}
-                  className=" p-2 cursor-pointer hover:bg-[#a5a7b9]">
-                  Product1
-                  {mHover && (
-                    <ul className=" bg-[#696b7e] w-28 absolute right-full top-0">
-                      <li className=" p-2 cursor-pointer hover:bg-[#a5a7b9] ">
-                        Product1.1
-                      </li>
-                      <li className=" p-2 cursor-pointer hover:bg-[#a5a7b9] ">
-                        Product1.2
-                      </li>
-                    </ul>
-                  )}
+            <li className=" p-2 cursor-pointer group hover:bg-[#49a093ae] rounded-lg">
+              Contact
+              <ul className=" bg-[#05b59c]  w-28 absolute -right-6 mt-2 hidden group-hover:block z-50 rounded-md">
+                <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg">
+                  Head Office
                 </li>
-                <li className=" p-2 cursor-pointer hover:bg-[#a5a7b9] ">
-                  Product2
+                <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg ">
+                  Factory
                 </li>
-                <li className=" p-2 cursor-pointer hover:bg-[#a5a7b9] ">
-                  Product3
+                <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg ">
+                  Zone
                 </li>
               </ul>
             </li>
@@ -107,41 +87,75 @@ const Navbar = () => {
       {/*  */}
       {show && (
         <div className=" sm:hidden">
-          <div className=" bg-[#696b7e] w-40 h-full top-0 absolute flex flex-col  text-white px-5">
-            <div className=" p-2">Logo</div>
-            <ul className=" flex flex-col relative justify-between items-center">
-              <li className=" p-2 cursor-pointer">Home</li>
-              <li className=" p-2 cursor-pointer">Home</li>
-              <li className=" p-2 cursor-pointer">Home</li>
-              <li className=" p-2 cursor-pointer group">
-                Product
-                <ul className=" bg-[#696b7e] w-28 absolute mt-2 hidden group-hover:block">
-                  <li
-                    onMouseEnter={() => setHover(true)}
-                    onMouseLeave={() => setHover(false)}
-                    className=" p-2 cursor-pointer hover:bg-[#a5a7b9]">
-                    Product1
-                    {mHover && (
-                      <ul className=" bg-[#696b7e] w-28 absolute left-full top-0">
-                        <li className=" p-2 cursor-pointer hover:bg-[#a5a7b9] ">
-                          Product1.1
-                        </li>
-                        <li className=" p-2 cursor-pointer hover:bg-[#a5a7b9] ">
-                          Product1.2
-                        </li>
-                      </ul>
-                    )}
-                  </li>
-                  <li className=" p-2 cursor-pointer hover:bg-[#a5a7b9] ">
-                    Product2
-                  </li>
-                  <li className=" p-2 cursor-pointer hover:bg-[#a5a7b9] ">
-                    Product3
-                  </li>
-                </ul>
-              </li>
-              <li className=" p-2 cursor-pointer">Contact</li>
-            </ul>
+          <div className=" bg-[#05b59c]  w-40 h-full top-0 absolute flex flex-col  text-white px-5 z-50">
+            <Link to={"/"}>
+              <div className="w-[40px] h-[40px] rounded-full">
+                <img src={logo} alt="" className=" scale-150" />
+              </div>
+            </Link>
+
+            <div className=" block mt-2">
+              <ul className=" flex flex-col relative justify-between items-center">
+                <li className=" p-2 cursor-pointer">
+                  <NavLink to={"/"}>Home</NavLink>
+                </li>
+
+                <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg">
+                  <NavLink to={"/about"}>About</NavLink>
+                </li>
+                <li
+                  onClick={() => setHover(!mHover)}
+                  className=" p-2 cursor-pointer group relative"
+                >
+                  Products
+                  {mHover && (
+                    <ul className=" bg-[#34786e]  w-28 absolute top-2 -right-28 mt-2 hidden group-hover:block z-50">
+                      <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg">
+                        All Product
+                      </li>
+                      <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg ">
+                        Poultry
+                      </li>
+                      <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg ">
+                        Agro
+                      </li>
+                      <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg ">
+                        Pets
+                      </li>
+                      <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg ">
+                        Fish
+                      </li>
+                    </ul>
+                  )}
+                </li>
+                <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg">
+                  <NavLink to={"/about"}>Gallery</NavLink>
+                </li>
+                <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg">
+                  <NavLink to={"/about"}>Career</NavLink>
+                </li>
+
+                <li
+                  onClick={() => setHover(!mHover)}
+                  className=" p-2 cursor-pointer group relative"
+                >
+                  Contact
+                  {mHover && (
+                    <ul className=" bg-[#34786e] w-28 absolute top-2 -right-28 mt-2 hidden group-hover:block z-50">
+                      <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg">
+                        Head Office
+                      </li>
+                      <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg ">
+                        Factory
+                      </li>
+                      <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg ">
+                        Zone
+                      </li>
+                    </ul>
+                  )}
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       )}
