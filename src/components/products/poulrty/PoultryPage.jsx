@@ -1,18 +1,18 @@
 /** @format */
 
 import React from "react";
-import CareerHero from "../components/career/CareerHero";
-import WhayWithUs from "../components/career/WhayWithUs";
+import PoultryHero from "./PoultryHero";
+import PoultryCard from "./PoultryCard";
 
-const CareerPage = () => {
+const PoultryPage = () => {
   return (
     <div className="w-full flex flex-col  items-center justify-center ">
-      <CareerHero />
+      <PoultryHero />
       <div className="w-[85%] flex flex-col  items-center justify-center mt-10">
-        <WhayWithUs />
+        <PoultryCard />
       </div>
     </div>
   );
 };
 
-export default CareerPage;
+export default PoultryPage;

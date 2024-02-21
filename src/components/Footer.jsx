@@ -10,8 +10,8 @@ import { TbBrandTwitter } from "react-icons/tb";
 
 const Footer = () => {
   return (
-    <div className="min-w-screen flex flex-col min-h-screen justify-center items-center">
-      <div className="w-full grid 2xl:grid-cols-5 xl:grid-cols-5 bg-[##F4F4F4] justify-center items-center md:grid-cols-2 sm:grid-cols-2 max-sm:grid-cols-2 gap-4 mt-5 mb-5 p-[8px]">
+    <div className="min-w-screen flex flex-col min-h-screen justify-center  ">
+      <div className="w-full grid 2xl:grid-cols-5 xl:grid-cols-5 bg-[##F4F4F4] justify-center items-end md:grid-cols-2 sm:grid-cols-2 max-sm:grid-cols-2 gap-4 p-[8px]">
         <div className="flex flex-col h-[250px] w-[250px] mx-auto">
           <div className="flex flex-col justify-center items-start h-[250px] w-[250px] mx-auto p-2">
             <h2 className="text-md from-neutral-400 mb-2 text-slate-400">
@@ -272,7 +272,7 @@ const Footer = () => {
         </div>
         {/* end contact*/}
       </div>
-      <div className="w-full flex justify-center bg-[#05b59c] p-2 text-white">
+      <div className="w-full flex justify-center bg-[#05b59c] p-2 text-white mt-auto">
         © Copyright 2023. All Rights Reserved.{" "}
       </div>
     </div>

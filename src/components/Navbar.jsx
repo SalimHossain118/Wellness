@@ -25,26 +25,26 @@ const Navbar = () => {
               <NavLink to={"/"}>Home</NavLink>
             </li>
 
-            <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg hover:bg-[#49a093ae] rounded-lg ">
+            <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg ">
               <NavLink to={"/about"}>About</NavLink>
             </li>
             <li className=" p-2 cursor-pointer group hover:bg-[#49a093ae] rounded-lg ">
               Products
               <ul className=" bg-[#05b59c] w-28 absolute left-28 mt-2 hidden group-hover:block z-50 rounded-md">
                 <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg ">
-                  All Product
+                  <NavLink to={"/allproducts"}>All Product</NavLink>
                 </li>
                 <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg ">
-                  Poultry
+                  <NavLink to={"/poultryproducts"}>Poultry</NavLink>
                 </li>
                 <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg ">
-                  Agro
+                  <NavLink to={"/agroproducts"}>Agro</NavLink>
                 </li>
                 <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg ">
-                  Pets
+                  <NavLink to={"/petsproducts"}>Pets</NavLink>
                 </li>
                 <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg ">
-                  Fish
+                  <NavLink to={"/fishproducts"}>Fish</NavLink>
                 </li>
               </ul>
             </li>
@@ -52,7 +52,7 @@ const Navbar = () => {
               <NavLink to={"/about"}>Gallery</NavLink>
             </li>
             <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg">
-              <NavLink to={"/about"}>Career</NavLink>
+              <NavLink to={"/career"}>Career</NavLink>
             </li>
 
             <li className=" p-2 cursor-pointer group hover:bg-[#49a093ae] rounded-lg">
@@ -105,8 +105,7 @@ const Navbar = () => {
                 </li>
                 <li
                   onClick={() => setHover(!mHover)}
-                  className=" p-2 cursor-pointer group relative"
-                >
+                  className=" p-2 cursor-pointer group relative">
                   Products
                   {mHover && (
                     <ul className=" bg-[#34786e]  w-28 absolute top-2 -right-28 mt-2 hidden group-hover:block z-50">
@@ -137,8 +136,7 @@ const Navbar = () => {
 
                 <li
                   onClick={() => setHover(!mHover)}
-                  className=" p-2 cursor-pointer group relative"
-                >
+                  className=" p-2 cursor-pointer group relative">
                   Contact
                   {mHover && (
                     <ul className=" bg-[#34786e] w-28 absolute top-2 -right-28 mt-2 hidden group-hover:block z-50">

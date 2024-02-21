@@ -1,18 +1,18 @@
 /** @format */
 
 import React from "react";
-import CareerHero from "../components/career/CareerHero";
-import WhayWithUs from "../components/career/WhayWithUs";
+import FishCard from "./FishCard";
+import FishHero from "./FishHero";
 
-const CareerPage = () => {
+const FishPage = () => {
   return (
     <div className="w-full flex flex-col  items-center justify-center ">
-      <CareerHero />
+      <FishHero />
       <div className="w-[85%] flex flex-col  items-center justify-center mt-10">
-        <WhayWithUs />
+        <FishCard />
       </div>
     </div>
   );
 };
 
-export default CareerPage;
+export default FishPage;
