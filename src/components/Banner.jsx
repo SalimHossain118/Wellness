@@ -24,21 +24,25 @@ const Banner = () => {
   return (
     <>
       <div className=" w-full md-lg:mt-6">
-        <div className=" lg:w-[90%] mx-auto">
+        <div className=" w-full mx-auto">
           <div className=" w-full flex flex-wrap md-lg:gap-8">
             <div className=" w-full">
               <div className=" my-8">
                 <Carousel
                   autoPlay={true}
                   infinite={true}
-                  arrows={true}
+                  arrows={false}
                   showDots={true}
                   responsive={responsive}
                 >
-                  {[1, 2, 3, 4, 5, 6, 7].length > 0 &&
-                    [1, 2, 3, 4, 5, 6, 7].map((b, i) => (
+                  {[1, 2, 3, 4].length > 0 &&
+                    [1, 2, 3, 4].map((b, i) => (
                       <div className="lg:h-[440px] h-auto w-full block" key={i}>
-                        <img src={`/banner/${b}.jpg`} alt={b} />
+                        <img
+                          src={`/banner/${b}.jpg`}
+                          alt={b}
+                          className=" w-full h-full"
+                        />
                       </div>
                     ))}
                 </Carousel>
