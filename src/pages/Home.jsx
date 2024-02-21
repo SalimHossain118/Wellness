@@ -37,7 +37,7 @@ const Home = () => {
           <HomeAbout />
         </div>
 
-        <div className=" flex justify-around items-center mt-10">
+        <div className=" flex md:flex-col justify-around items-center mt-10">
           <div className=" flex flex-col gap-2 justify-center items-center p-10">
             <span className=" text-green-500 text-4xl p-6 rounded-full border border-slate-300">
               <MdMedicalServices />

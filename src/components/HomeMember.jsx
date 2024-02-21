@@ -5,7 +5,7 @@ import member from "../assets/images/member.png";
 
 const HomeMember = () => {
   return (
-    <div className=" w-full grid grid-cols-3">
+    <div className=" w-full grid grid-cols-3 md-lg:grid-cols-1">
       <div className=" w-full flex flex-col justify-center items-center p-12 bg-blue-900">
         <span className=" w-28 h-28 rounded-full">
           <img src={member} alt="" />

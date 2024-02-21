@@ -4,7 +4,7 @@ import { IoPeopleSharp } from "react-icons/io5";
 
 const HomeAbout = () => {
   return (
-    <div className=" w-full grid grid-cols-3">
+    <div className=" w-full grid grid-cols-3 md:grid-cols-1">
       <div className=" w-full flex flex-col justify-center items-center p-12 bg-blue-900">
         <span className=" text-white text-6xl">
           <FaFlag />

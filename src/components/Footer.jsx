@@ -10,8 +10,8 @@ import { TbBrandTwitter } from "react-icons/tb";
 
 const Footer = () => {
   return (
-    <div className="min-w-screen flex flex-col min-h-screen justify-center  ">
-      <div className="w-full grid 2xl:grid-cols-5 xl:grid-cols-5 bg-[##F4F4F4] justify-center items-end md:grid-cols-2 sm:grid-cols-2 max-sm:grid-cols-2 gap-4 p-[8px]">
+    <div className=" w-full flex flex-col relative">
+      <div className="w-full bg-[#F4F4F4] justify-around grid grid-cols-5 md-lg:grid-cols-2 2xs:grid-cols-1 items-end relative">
         <div className="flex flex-col h-[250px] w-[250px] mx-auto">
           <div className="flex flex-col justify-center items-start h-[250px] w-[250px] mx-auto p-2">
             <h2 className="text-md from-neutral-400 mb-2 text-slate-400">
@@ -202,7 +202,8 @@ const Footer = () => {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="w-3 h-3 mt-1 text-slate-400 ">
+              className="w-3 h-3 mt-1 text-slate-400 "
+            >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -232,7 +233,8 @@ const Footer = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-3 h-3 mt-1 text-slate-400 ">
+              className="w-3 h-3 mt-1 text-slate-400 "
+            >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -254,7 +256,8 @@ const Footer = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-3 h-3 mt-1 text-slate-400 ">
+              className="w-3 h-3 mt-1 text-slate-400 "
+            >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -272,7 +275,7 @@ const Footer = () => {
         </div>
         {/* end contact*/}
       </div>
-      <div className="w-full flex justify-center bg-[#05b59c] p-2 text-white mt-auto">
+      <div className="w-full flex justify-center bg-[#05b59c] p-2 text-white">
         © Copyright 2023. All Rights Reserved.{" "}
       </div>
     </div>
