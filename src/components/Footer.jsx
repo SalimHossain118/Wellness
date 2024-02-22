@@ -18,44 +18,38 @@ const Footer = () => {
               PRODUCTS
             </h2>
 
-            <Link>
+            <Link to={"/allproducts"}>
               <div className="flex justify-center gap-2 mb-2">
                 <FaChevronRight className="text-slate-400 mt-1" />
                 <div className="flex flex-col">
                   <p className="text-md text-slate-400 hover:text- ">
-                    Products1
+                    All Products
                   </p>
                 </div>
               </div>
             </Link>
 
-            <Link>
+            <Link to={"/poultryproducts"}>
               <div className="flex justify-center gap-2 mb-2">
                 <FaChevronRight className="text-slate-400 mt-1" />
                 <div className="flex flex-col">
-                  <p className="text-md text-slate-400 hover:text- ">
-                    Products2
-                  </p>
+                  <p className="text-md text-slate-400 hover:text- ">Poultry</p>
                 </div>
               </div>
             </Link>
-            <Link>
+            <Link to={"/agroproducts"}>
               <div className="flex justify-center gap-2 mb-2">
                 <FaChevronRight className="text-slate-400 mt-1" />
                 <div className="flex flex-col">
-                  <p className="text-md text-slate-400 hover:text- ">
-                    Products4
-                  </p>
+                  <p className="text-md text-slate-400 hover:text- ">Agro</p>
                 </div>
               </div>
             </Link>
-            <Link>
+            <Link to={"/petsproducts"}>
               <div className="flex justify-center gap-2 mb-2">
                 <FaChevronRight className="text-slate-400 mt-1" />
                 <div className="flex flex-col">
-                  <p className="text-md text-slate-400 hover:text- ">
-                    Products5
-                  </p>
+                  <p className="text-md text-slate-400 hover:text- ">Pets</p>
                 </div>
               </div>
             </Link>
@@ -67,7 +61,7 @@ const Footer = () => {
               QUICK LINKS
             </h2>
 
-            <Link>
+            <Link to={"/"}>
               <div className="flex justify-center gap-2 mb-2">
                 <FaChevronRight className="text-slate-400 mt-1" />
                 <div className="flex flex-col">
@@ -76,7 +70,7 @@ const Footer = () => {
               </div>
             </Link>
 
-            <Link>
+            <Link to={"/about"}>
               <div className="flex justify-center gap-2 mb-2">
                 <FaChevronRight className="text-slate-400 mt-1" />
                 <div className="flex flex-col">
@@ -84,17 +78,15 @@ const Footer = () => {
                 </div>
               </div>
             </Link>
-            <Link>
+            <Link to={"/gallery"}>
               <div className="flex justify-center gap-2 mb-2">
                 <FaChevronRight className="text-slate-400 mt-1" />
                 <div className="flex flex-col">
-                  <p className="text-md text-slate-400 hover:text- ">
-                    Products
-                  </p>
+                  <p className="text-md text-slate-400 hover:text- ">Gallery</p>
                 </div>
               </div>
             </Link>
-            <Link>
+            <Link to={"/career"}>
               <div className="flex justify-center gap-2 mb-2">
                 <FaChevronRight className="text-slate-400 mt-1" />
                 <div className="flex flex-col">
@@ -202,8 +194,7 @@ const Footer = () => {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="w-3 h-3 mt-1 text-slate-400 "
-            >
+              className="w-3 h-3 mt-1 text-slate-400 ">
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -233,8 +224,7 @@ const Footer = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-3 h-3 mt-1 text-slate-400 "
-            >
+              className="w-3 h-3 mt-1 text-slate-400 ">
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -256,8 +246,7 @@ const Footer = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-3 h-3 mt-1 text-slate-400 "
-            >
+              className="w-3 h-3 mt-1 text-slate-400 ">
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"

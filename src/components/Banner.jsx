@@ -26,7 +26,7 @@ const Banner = () => {
   return (
     <>
       <div className=" w-full md-lg:mt-6">
-        <div className=" w-full mx-auto  ">
+        <div className=" w-full mx-auto">
           <div className=" w-full flex flex-wrap md-lg:gap-8">
             <div className=" w-full">
               <div className=" my-8">
@@ -38,7 +38,9 @@ const Banner = () => {
                   responsive={responsive}>
                   {[1, 2, 3, 4].length > 0 &&
                     [1, 2, 3, 4].map((b, i) => (
-                      <div className="lg:h-[440px] h-auto w-full block" key={i}>
+                      <div
+                        className="lg:h-[400px] h-[450px] w-full block"
+                        key={i}>
                         <img
                           src={`/banner/${b}.jpg`}
                           alt={b}

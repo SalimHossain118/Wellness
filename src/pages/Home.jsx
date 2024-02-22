@@ -20,13 +20,22 @@ const Home = () => {
             We Care For You
           </h1>
           <div>
-            <p className=" text-justify font-normal text-xl opacity-70">
-              Popular Pharmaceuticals Ltd. (PPL), the pioneer manufacturer of
-              Human Insulin in Bangladesh, is a company of Popular Group, the
-              leading corporate house in the private sector Health Care
-              Management of the country. PPL is manufacturing and marketing its
-              high quality and wide variety of product range both in home and
-              abroad.
+            <p className=" text-justify font-normal text-md opacity-70">
+              Wellness Pharmaceutical Ltd. is a leading global pharmaceutical
+              company dedicated to advancing healthcare through cutting-edge
+              researches, development, and delivery of innovative pharmaceutical
+              solutions for both human and veterinary. With a commitment to
+              improving global health, the company has been at the forefront of
+              scientific innovation, consistently delivering high-quality
+              products that address unmet medical needs. It was established on
+              2023 having a rich history of pharmaceutical research and
+              marketing skills and experiences of resource person in our
+              country. At last, this company collaborates the manufacturing of
+              drugs even formula of products with various international platform
+              besides their own products. Their Research and development
+              department is highly enriched with laboratory facilities for
+              testing their quality control and assurances even marketing
+              policies to up to date.
             </p>
           </div>
           <button className=" mt-5 border-spacing-0 border-8 border-green-700 px-10 py-2 hover:bg-blue-700 transition-all hover:border-blue-700 hover:text-white">
@@ -72,7 +81,7 @@ const Home = () => {
             </span>
             <h1 className=" text-2xl font-normal ">Manufacturing Facilities</h1>
             <p className=" text-justify opacity-80">
-              Popular Pharmaceuticals Ltd. is a leading manufacturer of
+              Wellness Pharmaceutical Ltd. is a leading manufacturer of
               medicines and active pharmaceutical ingredients (APIs) based in
               Bangladesh.
             </p>
@@ -87,8 +96,8 @@ const Home = () => {
             <h1 className=" text-2xl font-normal ">Reseacrh & Development</h1>
             <p className=" text-justify opacity-80">
               Our product development team continues its strong research
-              orientation in formulation development to transform PPL into a
-              truly international one.
+              orientation in formulation development to transform Wellness
+              Pharmaceutical Ltd. into a truly international one.
             </p>
             <button className=" hover:underline uppercase px-5 py-2 bg-green-700 rounded-sm text-white text-sm font-semibold mt-6">
               learn more

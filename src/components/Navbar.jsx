@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className=" bg-[#05b59c] w-full flex h-14 items-center justify-between text-white px-5">
+      <div className=" bg-[#05b59c] w-full flex h-14 items-center justify-between text-white px-5 fixed z-50">
         <Link to={"/"}>
           <div className="w-[40px] h-[40px]">
             <img src={logo} alt="" className=" scale-150" />
@@ -49,7 +49,7 @@ const Navbar = () => {
               </ul>
             </li>
             <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg">
-              <NavLink to={"/callery"}>Gallery</NavLink>
+              <NavLink to={"/gallery"}>Gallery</NavLink>
             </li>
             <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg">
               <NavLink to={"/career"}>Career</NavLink>
@@ -64,9 +64,9 @@ const Navbar = () => {
                 <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg ">
                   Factory
                 </li>
-                <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg ">
+                {/* <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg ">
                   Zone
-                </li>
+                </li> */}
               </ul>
             </li>
           </ul>
@@ -110,28 +110,28 @@ const Navbar = () => {
                   {mHover && (
                     <ul className=" bg-[#34786e] hover:bg-[#49a093ae] rounded-lg  w-28 absolute top-2 -right-28 mt-2 hidden group-hover:block z-50">
                       <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg">
-                        All Product
+                        <NavLink to={"/allproducts"}>All Product</NavLink>
                       </li>
                       <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg ">
-                        Poultry
+                        <NavLink to={"/poultryproducts"}>Poultry</NavLink>
                       </li>
                       <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg ">
-                        Agro
+                        <NavLink to={"/agroproducts"}>Agro</NavLink>
                       </li>
                       <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg ">
-                        Pets
+                        <NavLink to={"/petsproducts"}>Pets</NavLink>
                       </li>
                       <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg ">
-                        Fish
+                        <NavLink to={"/fishproducts"}>Fish</NavLink>
                       </li>
                     </ul>
                   )}
                 </li>
                 <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg">
-                  <NavLink to={"/about"}>Gallery</NavLink>
+                  <NavLink to={"/gallery"}>Gallery</NavLink>
                 </li>
                 <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg">
-                  <NavLink to={"/about"}>Career</NavLink>
+                  <NavLink to={"/career"}>Career</NavLink>
                 </li>
 
                 <li
@@ -146,9 +146,9 @@ const Navbar = () => {
                       <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg ">
                         Factory
                       </li>
-                      <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg ">
+                      {/* <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg ">
                         Zone
-                      </li>
+                      </li> */}
                     </ul>
                   )}
                 </li>

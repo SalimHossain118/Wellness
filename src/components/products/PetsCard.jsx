@@ -9,8 +9,7 @@ const PetsCard = () => {
         {petsproducts.map((product, index) => (
           <div
             key={index}
-            className="w-[300px] h-[400px] bg-white shadow-xl rounded-lg p-3 justify-center"
-          >
+            className="w-[300px] h-[400px] bg-white shadow-xl rounded-lg p-3 justify-center">
             <div className="flex justify-center">
               <img src={product.image} className="w-[150px] h-[150px]" />
             </div>
