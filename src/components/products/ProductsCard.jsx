@@ -6,11 +6,12 @@ import { allproducts } from "../../constants/data.js";
 const ProductsCard = () => {
   return (
     <div className="w-full justify-center items-center py-0">
-      <div className="w-full  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-3 p-2">
+      <div className="w-full grid grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-3 p-2">
         {allproducts.map((product, index) => (
           <div
             key={index}
-            className="w-[300px] h-[400px] bg-white shadow-xl rounded-lg p-3 justify-center">
+            className="w-[300px] h-[400px] bg-white shadow-xl rounded-lg p-3 justify-center"
+          >
             <div className="flex justify-center">
               <img src={product.image} className="w-[150px] h-[150px]" />
             </div>
