@@ -38,7 +38,7 @@ const Banner = () => {
                   responsive={responsive}>
                   {[1, 2, 3, 4].length > 0 &&
                     [1, 2, 3, 4].map((b, i) => (
-                      <div className="lg:h-[340px] h-auto w-full block" key={i}>
+                      <div className="lg:h-[440px] h-auto w-full block" key={i}>
                         <img
                           src={`/banner/${b}.jpg`}
                           alt={b}

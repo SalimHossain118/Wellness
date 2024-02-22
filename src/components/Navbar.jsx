@@ -87,7 +87,7 @@ const Navbar = () => {
       {/*  */}
       {show && (
         <div className=" sm:block hidden">
-          <div className=" bg-[#05b59c] w-40 h-full fixed flex flex-col text-white px-5 z-50">
+          <div className=" bg-[#05b59c] w-40 h-auto fixed flex flex-col text-white px-5 z-50">
             <Link to={"/"}>
               <div className="w-[40px] h-[40px]">
                 <img src={logo} alt="" className=" scale-150" />

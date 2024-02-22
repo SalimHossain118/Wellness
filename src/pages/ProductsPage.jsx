@@ -6,7 +6,7 @@ import AllProducts from "../components/products/AllProducts";
 
 const ProductsPage = () => {
   return (
-    <div className="w-full flex flex-col items-center">
+    <div className="w-full flex flex-col justify-center items-center">
       <ProductsHero />
       <AllProducts />
     </div>
