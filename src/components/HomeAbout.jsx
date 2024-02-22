@@ -13,7 +13,7 @@ const HomeAbout = () => {
         <p className=" text-white text-justify text-lg opacity-80">
           "Popular Pharmaceuticals Ltd. will be the leading pharmaceutical
           company of the country within 2015 as manufacturer of high-tech, high
-          quality affordable medicines"
+          quality affordable medicines."
         </p>
         <div className=" self-start">
           <button className=" bg-green-600 px-6 text-white rounded-md mt-10 text-lg font-semibold py-2 hover:bg-green-500">
