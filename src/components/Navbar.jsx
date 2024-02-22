@@ -12,14 +12,14 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className=" bg-[#05b59c] w-full flex h-14 items-center justify-between text-white px-5">
+      <div className=" bg-[#05b59c] w-full flex h-14 items-center justify-between text-white px-5 fixed z-50">
         <Link to={"/"}>
-          <div className="w-[40px] h-[40px] rounded-full">
+          <div className="w-[40px] h-[40px]">
             <img src={logo} alt="" className=" scale-150" />
           </div>
         </Link>
 
-        <div className=" hidden sm:block">
+        <div className="  sm:hidden">
           <ul className=" flex relative justify-between items-center">
             <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg">
               <NavLink to={"/"}>Home</NavLink>
@@ -72,7 +72,7 @@ const Navbar = () => {
           </ul>
         </div>
         {/* end=> of large screen */}
-        <div className=" sm:hidden z-10">
+        <div className=" sm:block hidden z-10">
           {show ? (
             <span onClick={() => setShow(!show)}>
               <RxCross2 />
@@ -86,10 +86,10 @@ const Navbar = () => {
       </div>
       {/*  */}
       {show && (
-        <div className=" sm:hidden">
-          <div className=" bg-[#05b59c]  w-40 h-full top-0 absolute flex flex-col  text-white px-5 z-50">
+        <div className=" sm:block hidden">
+          <div className=" bg-[#05b59c] w-40 h-full fixed flex flex-col text-white px-5 z-50">
             <Link to={"/"}>
-              <div className="w-[40px] h-[40px] rounded-full">
+              <div className="w-[40px] h-[40px]">
                 <img src={logo} alt="" className=" scale-150" />
               </div>
             </Link>
@@ -105,10 +105,11 @@ const Navbar = () => {
                 </li>
                 <li
                   onClick={() => setHover(!mHover)}
-                  className=" p-2 cursor-pointer group relative">
+                  className=" p-2 cursor-pointer group relative"
+                >
                   Products
                   {mHover && (
-                    <ul className=" bg-[#34786e]  w-28 absolute top-2 -right-28 mt-2 hidden group-hover:block z-50">
+                    <ul className=" bg-[#34786e] hover:bg-[#49a093ae] rounded-lg  w-28 absolute top-2 -right-28 mt-2 hidden group-hover:block z-50">
                       <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg">
                         All Product
                       </li>
@@ -136,10 +137,11 @@ const Navbar = () => {
 
                 <li
                   onClick={() => setHover(!mHover)}
-                  className=" p-2 cursor-pointer group relative">
+                  className=" p-2 cursor-pointer group relative hover:bg-[#49a093ae] rounded-lg"
+                >
                   Contact
                   {mHover && (
-                    <ul className=" bg-[#34786e] w-28 absolute top-2 -right-28 mt-2 hidden group-hover:block z-50">
+                    <ul className=" bg-[#34786e] w-28 absolute rounded-md -top-8 -right-28 mt-2 hidden group-hover:block z-50">
                       <li className=" p-2 cursor-pointer hover:bg-[#49a093ae] rounded-lg">
                         Head Office
                       </li>
